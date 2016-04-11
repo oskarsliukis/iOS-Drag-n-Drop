@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DragAndDropViewController">
+            <connections>
+                <outlet property="completionArea" destination="uN7-lc-xtx" id="ZU5-Ef-avI"/>
+                <outlet property="overlayView" destination="GL9-j1-3Gt" id="5o0-Ke-pfa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GL9-j1-3Gt">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-lc-xtx">
+                            <rect key="frame" x="270" y="270" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="a8b-va-3LQ"/>
+                                <constraint firstAttribute="height" constant="60" id="oRe-LM-bBg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="uN7-lc-xtx" secondAttribute="centerX" id="C5f-Uj-09N"/>
+                        <constraint firstAttribute="centerY" secondItem="uN7-lc-xtx" secondAttribute="centerY" id="uJS-fj-z1E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GL9-j1-3Gt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="86k-2N-lwf"/>
+                <constraint firstAttribute="trailing" secondItem="GL9-j1-3Gt" secondAttribute="trailing" id="Hdf-te-cQw"/>
+                <constraint firstAttribute="bottom" secondItem="GL9-j1-3Gt" secondAttribute="bottom" id="KrC-Kx-bQe"/>
+                <constraint firstItem="GL9-j1-3Gt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lRt-Vn-BX6"/>
+            </constraints>
+            <point key="canvasLocation" x="433" y="360"/>
+        </view>
+    </objects>
+</document>
